@@ -2,20 +2,20 @@
 --cmd
 	--chatroom		聊天室server可执行程序
 	--client		聊天室client可执行程序
---config			服务器配置
---dfa				屏蔽字dfa算法
---logic				聊天室逻辑
-	--lastmsg.go	历史聊天记录
-	--message.go 	消息结构定义
-	--messagedispather.go 消息分发器
-	--player.go		玩家
-	--popular.go	流行词统计
-	--room.go		聊天室
-	--sensitive.go  屏蔽字
---server
-	--客户端服务器交互消息
---utls
-	--公共函数
+	--config			服务器配置
+	--dfa				屏蔽字dfa算法
+	--logic				聊天室逻辑
+		--lastmsg.go	历史聊天记录
+		--message.go 	消息结构定义
+		--messagedispather.go 消息分发器
+		--player.go		玩家
+		--popular.go	流行词统计
+		--room.go		聊天室
+		--sensitive.go  屏蔽字
+	--server
+		--客户端服务器交互消息
+	--utls
+		--公共函数
 	
 2.lastmsg历史消息
 	使用ring.Ring环形链表保存最近50条历史消息
